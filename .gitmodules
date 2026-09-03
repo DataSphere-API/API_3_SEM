@@ -1,0 +1,6 @@
+[submodule "API_3_SEM_BACKEND"]
+	path = API_3_SEM_BACKEND
+	url = git@github.com:DataSphere-API/API_3_SEM_BACKEND.git
+[submodule "API_3_SEM_FRONTEND"]
+	path = API_3_SEM_FRONTEND
+	url = git@github.com:DataSphere-API/API_3_SEM_FRONTEND.git

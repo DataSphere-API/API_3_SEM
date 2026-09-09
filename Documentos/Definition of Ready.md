@@ -1,0 +1,12 @@
+<p align="center">
+  <img src="assets/logo_datasphere.png" width="200"/>
+  <h2 align="center"> Datasphere </h2>
+</p>
+
+#### Definition of Ready (DoR) <a id="dor"></a>
+
+- As User Storys devem ser claras e sem ambiguidades.
+- As informações necessárias para a execução das User Storys devem estar disponíveis e de fácil acesso.
+- Os dados armazenados foram bem definidos, com tipos e validações.
+- As User Stories devem ser independentes ou possuir suas dependências claramente identificadas.
+- Protótipo de tela feito e aprovado.

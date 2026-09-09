@@ -226,9 +226,9 @@ Sprints de **3 semanas**, com tasks quebradas para no máximo **8h** cada.
 
 | Período da Sprint | Link para Documentação da Sprint | Link para Vídeo do Incremento Entregue |
 |---|---|---|
-| Sprint 1 — 07/09 a 27/09/2026 | ⚠️ [PREENCHER LINK] | ⚠️ [PREENCHER LINK] |
-| Sprint 2 — 05/10 a 25/10/2026 | ⚠️ [PREENCHER LINK] | ⚠️ [PREENCHER LINK] |
-| Sprint 3 — 02/11 a 22/11/2026 | ⚠️ [PREENCHER LINK] | ⚠️ [PREENCHER LINK] |
+| Sprint 1 — 07/09 a 27/09/2026 |  [LINK] |  [LINK] |
+| Sprint 2 — 05/10 a 25/10/2026 |  [LINK] |  [LINK] |
+| Sprint 3 — 02/11 a 22/11/2026 |  [LINK] |  [LINK] |
 
 ---
 
@@ -241,29 +241,8 @@ Sprints de **3 semanas**, com tasks quebradas para no máximo **8h** cada.
 | Banco de Dados | PostgreSQL |
 | Migrações de Banco | Flyway |
 | Containerização | Docker + Docker Compose |
-| Gestão de Sprints | ⚠️ [PREENCHER — Trello ou GitHub Projects] |
+| Gestão de Sprints | GitHub Projects |
 | Versionamento | Git + GitHub |
-
----
-
-## 📁 Estrutura do Projeto
-
-> **[PREENCHER / AJUSTAR]** Estrutura proposta com base no stack definido — ajuste conforme a organização real de pastas do repositório.
-
-```
-.
-├── backend/                  # API Java + Spring Boot
-│   ├── src/main/java/...
-│   ├── src/main/resources/
-│   │   └── db/migration/     # Scripts Flyway
-│   └── pom.xml
-├── frontend/                  # SPA Vue.js
-│   ├── src/
-│   └── package.json
-├── docs/                      # Pasta de Documentação (ver seção abaixo)
-├── docker-compose.yml
-└── README.md
-```
 
 ---
 
@@ -276,12 +255,12 @@ Sprints de **3 semanas**, com tasks quebradas para no máximo **8h** cada.
 
 ### Executando com Docker Compose
 ```bash
-git clone ⚠️[PREENCHER LINK DO REPOSITÓRIO]
+git clone https://github.com/DataSphere-API/API_3_SEM.git
 cd fusex-integra
 docker compose up -d --build
 ```
-- Backend disponível em: `http://localhost:⚠️[PREENCHER PORTA]`
-- Frontend disponível em: `http://localhost:⚠️[PREENCHER PORTA]`
+- Backend disponível em: `http://localhost:[PORTA]`
+- Frontend disponível em: `http://localhost:[PORTA]`
 - As migrações do banco (Flyway) são aplicadas automaticamente ao subir o backend.
 
 ### Rodando testes
@@ -299,7 +278,7 @@ cd frontend && npm run test
 
 ## 📚 Documentação
 
-Pasta de Documentação completa: ⚠️ **[PREENCHER LINK]**
+Pasta de Documentação completa:
 
 - [ ] Checklist de DoR e DoD
 - [ ] DoR e DoD por Sprint
@@ -324,7 +303,6 @@ Pasta de Documentação completa: ⚠️ **[PREENCHER LINK]**
 Exemplo: `feat (US001, US002): implementação do endpoint de recebimento de faturas`
 
 ### Estratégia de Branch
-> ⚠️ **[CONFIRMAR COM O TIME]** Sugestão baseada no **GitHub Flow**, adequada ao tamanho da equipe (7 pessoas) e à duração das sprints (3 semanas):
 
 - `main` — sempre estável, protegida contra commit direto.
 - `feature/<nome-da-funcionalidade>` — uma branch por funcionalidade/US.

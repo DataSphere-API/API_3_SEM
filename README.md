@@ -102,65 +102,83 @@ O **FUSEX Integra** unifica e automatiza a gestão de guias e faturamentos por m
       <th>User Stories</th>
       <th>Prioridade</th>
       <th>Estimativa</th>
+      <th>Sprint</th>
     </tr>
     <tr>
       <td align="center"> <b> US001 </b> </td>
       <td> Como clínica/OCS, quero enviar digitalmente o espelho de fatura, para agilizar o recebimento das faturas pelo FUSEx. </td>
-      <td align="center"> BAIXA </td>
+      <td align="center"> ALTA </td>
       <td align="center"> 5 </td>
+      <td align="center"> 1 </td>
     </tr>
     <tr>
       <td align="center"> <b> US002 </b> </td>
       <td> Como auditor, quero comparar os valores apresentados na fatura com os valores do contrato, para identificar divergências antes da aprovação. </td>
       <td align="center"> ALTA </td>
       <td align="center"> 13 </td>
+      <td align="center"> 1 </td>
     </tr>
     <tr>
       <td align="center"> <b> US003 </b> </td>
       <td> Como emissor de guia, quero registrar a solicitação de exame gerando uma Pré Guia, para que o processo de encaminhamento já comece padronizado. </td>
       <td align="center"> BAIXA </td>
-      <td align="center"> 2 </td>
+      <td align="center">  </td>
     </tr>
     <tr>
       <td align="center"> <b> US004 </b> </td>
       <td> Como emissor de guia, quero gerar a Guia de Encaminhamento FUSEX no SIRE com os dados coletados no app, para evitar preenchimento manual duplicado. </td>
       <td align="center"> MÉDIA </td>
-      <td align="center"> 3 </td>
+      <td align="center">  </td>
     </tr>
     <tr>
       <td align="center"> <b> US005 </b> </td>
       <td> Como beneficiário, quero apresentar a guia com QR Code na clínica, para que o atendimento seja validado de forma segura. </td>
       <td align="center"> ALTA </td>
-      <td align="center"> 8 </td>
+      <td align="center">  </td>
     </tr>
     <tr>
       <td align="center"> <b> US006 </b> </td>
       <td> Como clínica/OCS, quero validar a guia por QR Code no momento do atendimento, para confirmar que o procedimento está autorizado. </td>
       <td align="center"> ALTA </td>
-      <td align="center"> 8 </td>
+      <td align="center">  </td>
     </tr>
     <tr>
       <td align="center"> <b> US007 </b> </td>
       <td> Como auditor, quero visualizar o histórico completo de cada guia (solicitação, emissão, atendimento, fatura, aprovação), para garantir rastreabilidade do processo. </td>
       <td align="center"> MÉDIA </td>
-      <td align="center"> 8 </td>
+      <td align="center">  </td>
     </tr>
     <tr>
       <td align="center"> <b> US008 </b> </td>
       <td> Como beneficiário, quero acessar um painel com o status de cada guia (solicitada, emitida, realizada, faturada, aprovada, liquidada), para acompanhar o andamento sem precisar consultar múltiplas fontes. </td>
       <td align="center"> BAIXA </td>
-      <td align="center"> 5 </td>
+      <td align="center">  </td>
     </tr>
     <tr>
       <td align="center"> <b> US009 </b> </td>
       <td> Como chefe do FUSEX, quero poder visualizar e aprovar a pré-guia, para que a guia definitiva seja emitida com mais rapidez. </td>
       <td align="center"> ALTA </td>
-      <td align="center"> 5 </td>
+      <td align="center">  </td>
     </tr>
   </table>
 </div>
 ---
 
+#### Definition of Ready (DoR) <a id="dor"></a>
+
+- As User Storys devem ser claras e sem ambiguidades.
+- As informações necessárias para a execução das User Storys devem estar disponíveis e de fácil acesso.
+- Os dados armazenados foram bem definidos, com tipos e validações.
+- As User Stories devem ser independentes ou possuir suas dependências claramente identificadas.
+- Protótipo de tela feito e aprovado.
+
+#### Definition of Done (DoD) <a id="dod"></a>
+
+- O código deve estar funcional e atender aos requisitos definidos para a User Story.
+- O responsável pela implementação deve garantir que os parâmetros e requisitos da User story sejam suficientes para o término da mesma.
+- O código deve ser revisado por, no mínimo, 1 outro membro do grupo antes do merge.
+- O código deve ser commitado seguindo os padrões de previamente estabelecidos pelo grupo.
+- O resultado da implementação deve ser validado e aprovado pelo PO.
 
 ### 📄 Documentação <a id="documentacao"></a>
 

@@ -11,38 +11,40 @@
       <th>User Stories</th>
       <th>Prioridade</th>
       <th>Estimativa</th>
+      <th>Sprint</th>
     </tr>
     <tr>
       <td align="center"> <b> US001 </b> </td>
       <td> Como clínica/OCS, quero enviar digitalmente o espelho de fatura, para agilizar o recebimento das faturas pelo FUSEx. </td>
       <td align="center"> BAIXA </td>
       <td align="center"> 5 </td>
+      <td align="center"> 1 </td>
     </tr>
     <tr>
       <td align="center"> <b> US002 </b> </td>
       <td> Como auditor, quero comparar os valores apresentados na fatura com os valores do contrato, para identificar divergências antes da aprovação. </td>
       <td align="center"> ALTA </td>
       <td align="center"> 13 </td>
+      <td align="center"> 1 </td>
     </tr>
   </table>
 </div>
 
-#### ✅ Definition of Ready (DoR) <a id="dor"></a>
+#### ✅ Definition of Ready (DoR) — US001 <a id="dor-us001"></a>
 
-- A User Story está bem escrita, clara e sem ambiguidades.w
-- As regras de negócio necessárias para execução da User Story estão definidas.
-- As informações necessárias para a execução da task estão disponíveis e de fácil acesso.
-- As dependências da User Story estão identificadas.
-- Cada task possui uma estimativa de esforço.
-- O esboço das telas necessárias está definido e aprovado.
+- A User Story *US001* está bem escrita, clara e sem ambiguidades.
+- As regras de negócio para criação e envio do espelho de fatura estão definidas.
+- Os dados necessários para criação e envio do espelho estão disponíveis.
+- As dependências da *US001* estão identificadas.
+- O esboço das telas necessárias para o envio do espelho de fatura está definido e aprovado.
 
-#### ✅ Definition of Done (DoD) <a id="dod"></a>
 
-- O código está funcional e atende aos requisitos definidos para a User Story.
-- O código possui tratamento das devidas exceções.
-- O código foi revisado por, no mínimo, 1 outro membro do grupo antes do merge.
-- Os commits foram realizados seguindo o padrão de commits estabelecido pelo grupo.
-- Foi realizado Pull Request para a branch principal.
-- O Pull Request foi revisado e aprovado pelo P.O.
-- As funcionalidades foram testadas e validadas.
-- As telas desenvolvidas em Vue correspondem aos esboços aprovados.
+
+
+#### ✅ Definition of Ready (DoR) — US002 <a id="dor-us002"></a>
+
+- A User Story *US002* está bem escrita, clara e sem ambiguidades.
+- Os valores da fatura e os valores definidos em contrato estão disponíveis para análise.
+- As regras para realização da conferência dos valores estão definidas.
+- A forma de apresentação das diferenças encontradas na comparação está definida.
+- O esboço da tela de conferência e visualização das divergências está definido e aprovado.

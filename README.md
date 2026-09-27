@@ -120,31 +120,31 @@ O **FUSEX Integra** unifica e automatiza a gestão de guias e faturamentos por m
     </tr>
     <tr>
       <td align="center"> <b> US003 </b> </td>
-      <td> Como emissor de guia, quero registrar a solicitação de exame gerando uma Pré Guia, para que o processo de encaminhamento já comece padronizado. </td>
-      <td align="center"> BAIXA </td>
-      <td align="center">  </td>
-      <td align="center"> 3 </td>
-    </tr>
-    <tr>
-      <td align="center"> <b> US004 </b> </td>
-      <td> Como emissor de guia, quero gerar a Guia de Encaminhamento FUSEX no SIRE com os dados coletados no app, para evitar preenchimento manual duplicado. </td>
-      <td align="center"> MÉDIA </td>
-      <td align="center">  </td>
-      <td align="center"> 3 </td>        
-    </tr>
-    <tr>
-      <td align="center"> <b> US005 </b> </td>
       <td> Como beneficiário, quero apresentar a guia com QR Code na clínica, para que o atendimento seja validado de forma segura. </td>
       <td align="center"> ALTA </td>
       <td align="center">  </td>
       <td align="center"> 2 </td>
     </tr>
     <tr>
-      <td align="center"> <b> US006 </b> </td>
+      <td align="center"> <b> US004 </b> </td>
       <td> Como clínica/OCS, quero validar a guia por QR Code no momento do atendimento, para confirmar que o procedimento está autorizado. </td>
       <td align="center"> ALTA </td>
       <td align="center">  </td>
       <td align="center"> 2 </td>
+    </tr>
+    <tr>
+      <td align="center"> <b> US005 </b> </td>
+      <td> Como chefe do FUSEX, quero poder visualizar e aprovar a pré-guia, para que a guia definitiva seja emitida com mais rapidez. </td>
+      <td align="center"> ALTA </td>
+      <td align="center">  </td>
+      <td align="center"> 2 </td>
+    </tr>
+    <tr>
+      <td align="center"> <b> US006 </b> </td>
+      <td> Como emissor de guia, quero gerar a Guia de Encaminhamento FUSEX no SIRE com os dados coletados no app, para evitar preenchimento manual duplicado. </td>
+      <td align="center"> MÉDIA </td>
+      <td align="center">  </td>
+      <td align="center"> 3 </td>        
     </tr>
     <tr>
       <td align="center"> <b> US007 </b> </td>
@@ -154,18 +154,18 @@ O **FUSEX Integra** unifica e automatiza a gestão de guias e faturamentos por m
       <td align="center"> 3 </td>
     </tr>
     <tr>
-      <td align="center"> <b> US008 </b> </td>
-      <td> Como beneficiário, quero acessar um painel com o status de cada guia (solicitada, emitida, realizada, faturada, aprovada, liquidada), para acompanhar o andamento sem precisar consultar múltiplas fontes. </td>
+      <td align="center"> <b> US008</b> </td>
+      <td> Como emissor de guia, quero registrar a solicitação de exame gerando uma Pré Guia, para que o processo de encaminhamento já comece padronizado. </td>
       <td align="center"> BAIXA </td>
       <td align="center">  </td>
       <td align="center"> 3 </td>
     </tr>
     <tr>
       <td align="center"> <b> US009 </b> </td>
-      <td> Como chefe do FUSEX, quero poder visualizar e aprovar a pré-guia, para que a guia definitiva seja emitida com mais rapidez. </td>
-      <td align="center"> ALTA </td>
+      <td> Como beneficiário, quero acessar um painel com o status de cada guia (solicitada, emitida, realizada, faturada, aprovada, liquidada), para acompanhar o andamento sem precisar consultar múltiplas fontes. </td>
+      <td align="center"> BAIXA </td>
       <td align="center">  </td>
-      <td align="center"> 2 </td>
+      <td align="center"> 3 </td>
     </tr>
   </table>
 </div>
@@ -251,7 +251,7 @@ Sprints de **3 semanas**, com tasks quebradas para no máximo **8h** cada.
 
 | Período da Sprint | Link para Documentação da Sprint | Link para Vídeo do Incremento Entregue |
 |---|---|---|
-| Sprint 1 — 07/09 a 27/09/2026 |   <a href ="documentos/Sprint%201/Backlog%20Sprint1/">Sprint 1</a> |  [LINK] |
+| Sprint 1 — 07/09 a 27/09/2026 |   <a href ="https://github.com/DataSphere-API/API_3_SEM/tree/main/Documentos/Sprint%201">Sprint 1</a> |  [LINK] |
 | Sprint 2 — 05/10 a 25/10/2026 |  [LINK] |  [LINK] |
 | Sprint 3 — 02/11 a 22/11/2026 |  [LINK] |  [LINK] |
 
@@ -272,6 +272,8 @@ Sprints de **3 semanas**, com tasks quebradas para no máximo **8h** cada.
 ---
 
 ## ▶️ Como Executar, Usar e Testar
+
+- Acesso ao manual de usuário  <a href="/Documentos/Manual do Usuário.md"></a>
 
 ### Pré-requisitos
 - Docker e Docker Compose instalados

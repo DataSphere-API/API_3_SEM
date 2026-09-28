@@ -14,8 +14,6 @@ As principais funcionalidades disponíveis no sistema são:
 - *Espelhos* — permite consultar os espelhos cadastrados e criar novos espelhos;
 - *Faturas* — permite consultar as faturas geradas e realizar a regeração de uma fatura quando necessário.
 
-> Para instruções de instalação do sistema, consulte o <a href="Manual de Instalação.md">Manual de Instalação.</a>
-
 ---
 
 # 📄 Espelhos

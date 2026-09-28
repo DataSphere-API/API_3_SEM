@@ -101,71 +101,71 @@ O **FUSEX Integra** unifica e automatiza a gestão de guias e faturamentos por m
       <th> Id </th>
       <th>User Stories</th>
       <th>Prioridade</th>
-      <th>Estimativa</th>
       <th>Sprint</th>
+      <th>Estimativa</th>
     </tr>
     <tr>
       <td align="center"> <b> US001 </b> </td>
       <td> Como clínica/OCS, quero enviar digitalmente o espelho de fatura, para agilizar o recebimento das faturas pelo FUSEx. </td>
       <td align="center"> ALTA </td>
-      <td align="center"> 5 </td>
       <td align="center"> 1 </td>
+      <td align="center"> 5 </td>
     </tr>
     <tr>
       <td align="center"> <b> US002 </b> </td>
       <td> Como auditor, quero comparar os valores apresentados na fatura com os valores do contrato, para identificar divergências antes da aprovação. </td>
       <td align="center"> ALTA </td>
-      <td align="center"> 13 </td>
       <td align="center"> 1 </td>
+      <td align="center"> 13 </td>
     </tr>
     <tr>
       <td align="center"> <b> US003 </b> </td>
       <td> Como beneficiário, quero apresentar a guia com QR Code na clínica, para que o atendimento seja validado de forma segura. </td>
       <td align="center"> ALTA </td>
-      <td align="center">  </td>
       <td align="center"> 2 </td>
+      <td align="center">  </td>
     </tr>
     <tr>
       <td align="center"> <b> US004 </b> </td>
       <td> Como clínica/OCS, quero validar a guia por QR Code no momento do atendimento, para confirmar que o procedimento está autorizado. </td>
       <td align="center"> ALTA </td>
-      <td align="center">  </td>
       <td align="center"> 2 </td>
+      <td align="center">  </td>
     </tr>
     <tr>
       <td align="center"> <b> US005 </b> </td>
       <td> Como chefe do FUSEX, quero poder visualizar e aprovar a pré-guia, para que a guia definitiva seja emitida com mais rapidez. </td>
       <td align="center"> ALTA </td>
-      <td align="center">  </td>
       <td align="center"> 2 </td>
+      <td align="center">  </td>
     </tr>
     <tr>
       <td align="center"> <b> US006 </b> </td>
       <td> Como emissor de guia, quero gerar a Guia de Encaminhamento FUSEX no SIRE com os dados coletados no app, para evitar preenchimento manual duplicado. </td>
       <td align="center"> MÉDIA </td>
-      <td align="center">  </td>
-      <td align="center"> 3 </td>        
+      <td align="center"> 3 </td>
+      <td align="center">  </td>        
     </tr>
     <tr>
       <td align="center"> <b> US007 </b> </td>
       <td> Como auditor, quero visualizar o histórico completo de cada guia (solicitação, emissão, atendimento, fatura, aprovação), para garantir rastreabilidade do processo. </td>
       <td align="center"> MÉDIA </td>
-      <td align="center">  </td>
       <td align="center"> 3 </td>
+      <td align="center">  </td>
     </tr>
     <tr>
       <td align="center"> <b> US008</b> </td>
       <td> Como emissor de guia, quero registrar a solicitação de exame gerando uma Pré Guia, para que o processo de encaminhamento já comece padronizado. </td>
       <td align="center"> BAIXA </td>
-      <td align="center">  </td>
       <td align="center"> 3 </td>
+      <td align="center">  </td>
     </tr>
     <tr>
       <td align="center"> <b> US009 </b> </td>
       <td> Como beneficiário, quero acessar um painel com o status de cada guia (solicitada, emitida, realizada, faturada, aprovada, liquidada), para acompanhar o andamento sem precisar consultar múltiplas fontes. </td>
       <td align="center"> BAIXA </td>
-      <td align="center">  </td>
       <td align="center"> 3 </td>
+      <td align="center">  </td>
     </tr>
   </table>
 </div>

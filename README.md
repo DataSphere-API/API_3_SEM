@@ -250,7 +250,7 @@ Sprints de **3 semanas**, com tasks quebradas para no máximo **8h** cada.
 
 | Período da Sprint | Link para Documentação da Sprint | Link para Vídeo do Incremento Entregue |
 |---|---|---|
-| Sprint 1 — 07/09 a 27/09/2026 |   <a href ="/Documentos/Sprint 1">Sprint 1</a> |  <a href ="/Documentos/assets/video/Sprint 1">Sprint 1</a> |
+| Sprint 1 — 07/09 a 27/09/2026 |   <a href ="/Documentos/Sprint 1">Sprint 1</a> |  <a href ="/Documentos/Sprint 1/video.md">Sprint 1</a> |
 | Sprint 2 — 05/10 a 25/10/2026 |  [LINK] |  [LINK] |
 | Sprint 3 — 02/11 a 22/11/2026 |  [LINK] |  [LINK] |
 

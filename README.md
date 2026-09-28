@@ -193,7 +193,6 @@ A documentação está disponível na pasta  <a href="/Documentos/"> Documentos<
 
 ##### Conteúdo:
 - <a href="/Documentos/Padrao%20de%20Commits.md"> Padrão de Commits </a>
-- <a href="/Documentos/Estratégia de Branch.md"> Estratégia de Branches </a>
 - <a href="/Documentos/Manual do Usuário.md"> Manual do usuário </a>
 - <a href="/Documentos/Manual de Instalação.md"> Manual de Instalação </a>
 - <a href="/Documentos/"> Documentação por sprint </a>
@@ -251,7 +250,7 @@ Sprints de **3 semanas**, com tasks quebradas para no máximo **8h** cada.
 
 | Período da Sprint | Link para Documentação da Sprint | Link para Vídeo do Incremento Entregue |
 |---|---|---|
-| Sprint 1 — 07/09 a 27/09/2026 |   <a href ="https://github.com/DataSphere-API/API_3_SEM/tree/main/Documentos/Sprint%201">Sprint 1</a> |  [LINK] |
+| Sprint 1 — 07/09 a 27/09/2026 |   <a href ="/Documentos/Sprint 1">Sprint 1</a> |  <a href ="/Documentos/assets/video/Sprint 1">Sprint 1</a> |
 | Sprint 2 — 05/10 a 25/10/2026 |  [LINK] |  [LINK] |
 | Sprint 3 — 02/11 a 22/11/2026 |  [LINK] |  [LINK] |
 
@@ -273,7 +272,7 @@ Sprints de **3 semanas**, com tasks quebradas para no máximo **8h** cada.
 
 ## ▶️ Como Executar, Usar e Testar
 
-- Acesso ao manual de usuário  <a href="/Documentos/Manual do Usuário.md"></a>
+- Acesso ao manual de usuário  <a href="/Documentos/Sprint 1/Manual do usuário.md"></a>
 
 ### Pré-requisitos
 - Docker e Docker Compose instalados
@@ -286,8 +285,8 @@ git clone https://github.com/DataSphere-API/API_3_SEM.git
 cd fusex-integra
 docker compose up -d --build
 ```
-- Backend disponível em: `http://localhost:[PORTA]`
-- Frontend disponível em: `http://localhost:[PORTA]`
+- Backend disponível em: `http://localhost:8080/`
+- Frontend disponível em: `http://localhost:5173/`
 - As migrações do banco (Flyway) são aplicadas automaticamente ao subir o backend.
 
 ### Rodando testes

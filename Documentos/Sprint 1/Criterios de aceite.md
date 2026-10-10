@@ -1,7 +1,7 @@
-<div align="center">
-  <img src="../logo_datasphere.png" width="180" alt="DataSphere Logo"/>
-  <h2>Critérios de Aceite — Sprint 1</h2>
-</div>
+<p align="center">
+  <img src="Documentos/assets/logo_datasphere.png" width="200"/>
+  <h2 align="center"> Datasphere </h2>
+</p>
 
 ---
 

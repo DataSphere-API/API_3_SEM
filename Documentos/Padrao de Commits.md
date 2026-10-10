@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="../logo_datasphere.png" width="200"/>
-  <h2 align="center"> Padrão de Commits </h2>
+  <img src="Documentos/assets/logo_datasphere.png" width="200"/>
+  <h2 align="center"> Datasphere </h2>
 </p>
 
 Este padrão segue o critério **G.3 — Padrão de Mensagem dos Commits** do Guia de Avaliação API: toda mensagem deve conter *tipo de alteração*, *tarefa* e *breve descrição*. Aplicado em 100% dos commits, garante nível 4 (nota máxima) no critério.

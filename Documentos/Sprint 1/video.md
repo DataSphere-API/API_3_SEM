@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo_datasphere.png" width="200"/>
+  <img src="Documentos/assets/logo_datasphere.png" width="200"/>
   <h2 align="center"> Datasphere </h2>
 </p>
 

@@ -14,7 +14,103 @@ Hoje o processo de emissão, uso e faturamento de guias médicas entre a UG FUSE
 O objetivo é integrar toda a cadeia:
 Pedido médico → Autorização → Guia → Atendimento → Assinatura → Faturamento → Auditoria → SisFat
 
-Etapas do negócio:
+# REGRAS DE NEGÓCIO 
+
+1. Objetivo
+
+Este documento define as regras de negócio que orientam o funcionamento do DataSphere, contemplando a emissão de pré-guias e guias, a realização de procedimentos médicos, o faturamento pelas Organizações Civis de Saúde (OCS), a auditoria dos valores cobrados e a aprovação dos pagamentos pelo FUSEx.
+
+2. Cadastro de usuários e entidades
+
+RN001 — Cadastro de envolvidos
+
+O chefe do FUSEx é responsável por cadastrar e manter os registros dos médicos, auditores, OCS e contratos necessários ao funcionamento do sistema.
+
+RN002 — Usuários como beneficiários
+
+Todos os usuários envolvidos no processo, incluindo médicos, auditores e chefes do FUSEx, também são beneficiários. O sistema deverá permitir que essas pessoas tenham seus dados de beneficiário associados às suas respectivas funções.
+
+RN003 — Associação entre OCS e contrato
+
+Cada OCS deverá possuir um contrato cadastrado que estabeleça os valores dos procedimentos médicos aplicáveis à prestação dos serviços.
+
+3. Pré-guias e emissão de guias
+
+RN004 — Geração da pré-guia
+
+O pedido do cliente deverá gerar uma pré-guia contendo o procedimento médico solicitado. A pré-guia será impressa pelo emissor de guias.
+
+RN005 — Conversão da pré-guia em guia
+
+A pré-guia somente poderá se tornar uma guia após receber a assinatura do médico responsável e a aprovação por assinatura do chefe do FUSEx.
+
+RN006 — Validade da guia
+
+A guia terá validade de 60 dias para a realização do procedimento e para o cumprimento das condições de apresentação no processo de faturamento.
+
+RN007 — Responsabilidade pela apresentação da guia
+
+A OCS escolhida para realizar o procedimento deverá devolver a guia por meio do espelho de fatura para solicitar o pagamento correspondente.
+
+RN008 — Impedimento de pagamento por vencimento
+
+Guias apresentadas no espelho após o prazo de validade de 60 dias não serão pagas, mesmo que o procedimento médico tenha sido realizado.
+
+4. Espelhos de fatura
+
+RN009 — Composição do espelho
+
+O espelho de fatura será composto por um conjunto de guias encaminhadas pela OCS para solicitar o pagamento dos procedimentos realizados.
+
+RN010 — Recebimento dos espelhos
+
+O auditor será responsável por receber e analisar os espelhos de fatura encaminhados pelas OCS.
+
+RN011 — Análise das guias que compõem o espelho
+
+As guias integrantes de um espelho deverão ser analisadas individualmente, considerando sua validade e a conformidade dos valores cobrados com o contrato da OCS.
+
+5. Auditoria de valores
+
+RN012 — Comparação com os valores contratuais
+
+O auditor deverá comparar o valor apresentado para cada procedimento com o valor correspondente estabelecido no contrato da OCS responsável pelo atendimento.
+
+RN013 — Identificação de divergências
+
+Qualquer diferença entre o valor apresentado e o valor contratado deverá ser identificada, incluindo cobranças acima ou abaixo do valor previsto.
+
+RN014 — Aprovação ou reprovação de guias
+
+O auditor poderá aprovar ou reprovar individualmente as guias analisadas, conforme a conformidade dos valores cobrados com o contrato e as regras aplicáveis ao procedimento.
+
+RN015 — Tratamento de valores divergentes
+
+Guias com valores divergentes dos valores contratuais deverão ser submetidas à decisão do auditor, não devendo ser consideradas automaticamente conformes.
+
+6. Aprovação de pagamentos
+
+RN016 — Responsabilidade pela aprovação de pagamentos
+
+O chefe do FUSEx será responsável por aprovar os pagamentos dos espelhos de fatura.
+
+RN017 — Aprovação após auditoria
+
+A aprovação do pagamento deverá respeitar o resultado da auditoria das guias que compõem o espelho, bem como as restrições aplicáveis às guias vencidas e aos valores divergentes.
+
+7. Regras gerais de integridade
+
+RN018 — Integridade dos dados
+
+As informações do pedido, da pré-guia, da guia, do procedimento, da OCS, do contrato e do espelho deverão permanecer associadas de forma a permitir a rastreabilidade do processo.
+
+RN019 — Separação de responsabilidades
+
+O médico participa da validação da pré-guia, o auditor realiza a conferência das cobranças e o chefe do FUSEx realiza os cadastros previstos e aprova os pagamentos, respeitando as responsabilidades de cada função.
+
+
+# ETAPAS DO NEGÓCIO
+
 1. Solicitação: encaminhamento médico, consulta à Planilha Parâmetro (Excel), geração da Pré-Guia.
 2. Emissão de Guia: guia com clínica, procedimentos e valores corretos, integrada ao SIRE.
 3. Realização: o beneficiário faz o exame e a clínica valida a guia por QR Code.
@@ -24,9 +120,9 @@ Etapas do negócio:
 
 # PERFIS DE USUÁRIO
 - Beneficiário (paciente/militar): consulta guias pelo app, acompanha status e a validade de 60 dias.
-- Chefe/Aprovador (FUSEx): aprova pré-guias de forma digital.
-- Atendente/Funcionário (FUSEx): gera guias digitais e acompanha relatórios.
-- Clínica credenciada (OCS/PSA): valida atendimentos por QR Code e envia espelhos de fatura e insumos pelo portal.
+- Chefe (FUSEx): aprova pré-guias de forma digital e adiciona permissoes(Medico/Emissor/OCS/Contratos).
+- Emissor (FUSEx): gera guias digitais e acompanha relatórios.
+- Clínica credenciada (OCS/PSA): valida atendimentos e envia espelhos de fatura e insumos pelo portal.
 - Auditor: compara valores da fatura com o contrato e consulta o histórico das guias.
 
 # GLOSSÁRIO

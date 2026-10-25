@@ -192,7 +192,7 @@ A documentação está disponível na pasta  <a href="/Documentos/"> Documentos<
 
 ##### Conteúdo:
 - <a href="/Documentos/Padrao%20de%20Commits.md"> Padrão de Commits </a>
-- <a href="/Documentos/Manual%20de%20usu%C3%A1rio.md">Manual do usuÃ¡rio</a>
+- <a href="/Documentos/Manual%20de%20usu%C3%A1rio.md">Manual do usuário</a>
 - <a href="/Documentos/"> Documentação por sprint </a>
 - <a href="/Documentos/Definition of Ready.md"> Definition of Ready (DoR) </a>
 - <a href="/Documentos/Definition of Done.md"> Definition of Done (DoD) </a>
@@ -296,17 +296,29 @@ cd backend && mvn test
 cd frontend && npm run test
 ```
 
-
 ---
 
 ## 📚 Documentação
 
-Pasta de Documentação completa:
+Documentação disponível no repositório:
 
-- [ ] Checklist de DoR e DoD
-- [ ] DoR e DoD por Sprint
-- [ ] Estratégia de Branch
-- [ ] Manual de Usuário
+- [Manual de usuário](Documentos/Manual%20de%20usu%C3%A1rio.md)
+- [Regras de negócio](Documentos/Regras%20de%20negocio.md)
+- [Diretrizes de Permanência](Documentos/Diretrizes%20de%20Perman%C3%AAncia.md)
+- [Diagrama de Classes (documentação)](Documentos/Diagrama%20de%20Classes.md)
+- [Diagrama de Classes (PDF)](Documentos/assets/Diagrama-de-classes.pdf)
+- [Definition of Ready (DoR)](Documentos/Definition%20of%20Ready.md)
+- [Definition of Done (DoD)](Documentos/Definition%20of%20Done.md)
+- [Padrão de Commits](Documentos/Padrao%20de%20Commits.md)
+- [Documentação da Sprint 1](Documentos/Sprint%201/)
+  - [Backlog](Documentos/Sprint%201/Backlog%20Sprint%201.md)
+  - [Critérios de aceite](Documentos/Sprint%201/Criterios%20de%20aceite.md)
+  - [Vídeo da Sprint 1](Documentos/Sprint%201/video.md)
+  - [Burndown Chart](Documentos/Sprint%201/Burndown%20Chart/datasphere_burndown_chart_sprint1.png)
+- [Documentação da Sprint 2](Documentos/Sprint%202/)
+  - [Backlog](Documentos/Sprint%202/Backlog%20Sprint%202.md)
+  - [Critérios de aceite](Documentos/Sprint%202/Crit%C3%A9rios%20de%20aceite.md)
+  - [Vídeo da Sprint 2](Documentos/Sprint%202/video.md)
 
 ### Padrão de Commits
 ```

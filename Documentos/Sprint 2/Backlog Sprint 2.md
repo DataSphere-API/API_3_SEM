@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Documentos/assets/logo_datasphere.png" width="200"/>
+  <img src="assets/logo_datasphere.png" width="200"/>
   <h2 align="center"> Datasphere </h2>
 </p>
 
@@ -19,21 +19,21 @@
       <td> Como beneficiário, quero apresentar a guia com QR Code na clínica, para que o atendimento seja validado de forma segura. </td>
       <td align="center"> ALTA </td>
       <td align="center"> 2 </td>
-      <td align="center"> 2 </td>
+      <td align="center"> 8 </td>
     </tr>
     <tr>
       <td align="center"> <b> US004 </b> </td>
       <td> Como clínica/OCS, quero validar a guia por QR Code no momento do atendimento, para confirmar que o procedimento está autorizado. </td>
       <td align="center"> ALTA </td>
       <td align="center"> 2 </td>
-      <td align="center"> 2 </td>
+      <td align="center"> 8 </td>
     </tr>
     <tr>
       <td align="center"> <b> US005 </b> </td>
       <td> Como chefe do FUSEx, quero poder visualizar e aprovar a pré-guia, para que a guia definitiva seja emitida com mais rapidez. </td>
       <td align="center"> ALTA </td>
       <td align="center"> 2 </td>
-      <td align="center"> 2 </td>
+      <td align="center"> 5 </td>
     </tr>
   </table>
 </div>

@@ -66,8 +66,7 @@ flowchart LR
 - **Liquidação** — geração do MAPA e encaminhamento para auditoria e pagamento final.
 
 **Requisitos Não Funcionais:**
-- Manual de Instalação
-- Manual do Usuário 
+- <a href="/Documentos/Manual%20de%20usu%C3%A1rio.md">Manual do usuÃ¡rio</a>
 - Front-end minimalista 
 - Modelo de banco de dados relacional normalizado até a 3FN (MER completo), com documentação de modelo conceitual, lógico, físico e dicionário de dados — validados antes do início de cada Sprint
 - Documentação da API 
@@ -109,7 +108,7 @@ O **FUSEX Integra** unifica e automatiza a gestão de guias e faturamentos por m
       <td> Como clínica/OCS, quero enviar digitalmente o espelho de fatura, para agilizar o recebimento das faturas pelo FUSEx. </td>
       <td align="center"> ALTA </td>
       <td align="center"> 1 </td>
-      <td align="center"> 5 </td>
+      <td align="center"> 2 </td>
     </tr>
     <tr>
       <td align="center"> <b> US002 </b> </td>
@@ -123,21 +122,21 @@ O **FUSEX Integra** unifica e automatiza a gestão de guias e faturamentos por m
       <td> Como beneficiário, quero apresentar a guia com QR Code na clínica, para que o atendimento seja validado de forma segura. </td>
       <td align="center"> ALTA </td>
       <td align="center"> 2 </td>
-      <td align="center">  </td>
+      <td align="center"> 8 </td>
     </tr>
     <tr>
       <td align="center"> <b> US004 </b> </td>
       <td> Como clínica/OCS, quero validar a guia por QR Code no momento do atendimento, para confirmar que o procedimento está autorizado. </td>
       <td align="center"> ALTA </td>
       <td align="center"> 2 </td>
-      <td align="center">  </td>
+      <td align="center"> 8 </td>
     </tr>
     <tr>
       <td align="center"> <b> US005 </b> </td>
       <td> Como chefe do FUSEX, quero poder visualizar e aprovar a pré-guia, para que a guia definitiva seja emitida com mais rapidez. </td>
       <td align="center"> ALTA </td>
       <td align="center"> 2 </td>
-      <td align="center">  </td>
+      <td align="center"> 5 </td>
     </tr>
     <tr>
       <td align="center"> <b> US006 </b> </td>
@@ -193,8 +192,7 @@ A documentação está disponível na pasta  <a href="/Documentos/"> Documentos<
 
 ##### Conteúdo:
 - <a href="/Documentos/Padrao%20de%20Commits.md"> Padrão de Commits </a>
-- <a href="/Documentos/Manual do Usuário.md"> Manual do usuário </a>
-- <a href="/Documentos/Manual de Instalação.md"> Manual de Instalação </a>
+- <a href="/Documentos/Manual%20de%20usu%C3%A1rio.md">Manual do usuÃ¡rio</a>
 - <a href="/Documentos/"> Documentação por sprint </a>
 - <a href="/Documentos/Definition of Ready.md"> Definition of Ready (DoR) </a>
 - <a href="/Documentos/Definition of Done.md"> Definition of Done (DoD) </a>
@@ -251,7 +249,7 @@ Sprints de **3 semanas**, com tasks quebradas para no máximo **8h** cada.
 | Período da Sprint | Link para Documentação da Sprint | Link para Vídeo do Incremento Entregue |
 |---|---|---|
 | Sprint 1 — 07/09 a 27/09/2026 |   <a href ="/Documentos/Sprint 1">Sprint 1</a> |  <a href ="/Documentos/Sprint 1/video.md">Sprint 1</a> |
-| Sprint 2 — 05/10 a 25/10/2026 |  [LINK] |  [LINK] |
+| Sprint 2 — 05/10 a 25/10/2026 |   <a href ="/Documentos/Sprint%202/">Sprint 2</a> |  <a href ="/Documentos/Sprint%202/video.md">Sprint 2</a> |
 | Sprint 3 — 02/11 a 22/11/2026 |  [LINK] |  [LINK] |
 
 ---
@@ -272,7 +270,7 @@ Sprints de **3 semanas**, com tasks quebradas para no máximo **8h** cada.
 
 ## ▶️ Como Executar, Usar e Testar
 
-- Acesso ao manual de usuário  <a href="/Documentos/Sprint 1/Manual do usuário.md"></a>
+- <a href="/Documentos/Manual%20de%20usu%C3%A1rio.md">Manual do usuÃ¡rio</a>
 
 ### Pré-requisitos
 - Docker e Docker Compose instalados
@@ -298,7 +296,6 @@ cd backend && mvn test
 cd frontend && npm run test
 ```
 
-📄 Instruções completas: ver **Manual de Instalação** e **Manual de Usuário** na pasta de documentação.
 
 ---
 
@@ -310,7 +307,6 @@ Pasta de Documentação completa:
 - [ ] DoR e DoD por Sprint
 - [ ] Estratégia de Branch
 - [ ] Manual de Usuário
-- [ ] Manual de Instalação
 
 ### Padrão de Commits
 ```

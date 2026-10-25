@@ -66,7 +66,7 @@ flowchart LR
 - **Liquidação** — geração do MAPA e encaminhamento para auditoria e pagamento final.
 
 **Requisitos Não Funcionais:**
-- <a href="/Documentos/Manual%20de%20usu%C3%A1rio.md">Manual do usuÃ¡rio</a>
+- <a href="/Documentos/Manual%20de%20usu%C3%A1rio.md">Manual do usuário</a>
 - Front-end minimalista 
 - Modelo de banco de dados relacional normalizado até a 3FN (MER completo), com documentação de modelo conceitual, lógico, físico e dicionário de dados — validados antes do início de cada Sprint
 - Documentação da API 
@@ -270,7 +270,7 @@ Sprints de **3 semanas**, com tasks quebradas para no máximo **8h** cada.
 
 ## ▶️ Como Executar, Usar e Testar
 
-- <a href="/Documentos/Manual%20de%20usu%C3%A1rio.md">Manual do usuÃ¡rio</a>
+- <a href="/Documentos/Manual%20de%20usu%C3%A1rio.md">Manual do usuário</a>
 
 ### Pré-requisitos
 - Docker e Docker Compose instalados
@@ -375,16 +375,9 @@ Exemplo: `feat (US001, US002): implementação do endpoint de recebimento de fat
       <td>Desenvolvedor</td>
       <td><a href="https://github.com/vncssd"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
       <td><a href="https://www.linkedin.com/in/vncssd?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    </tr>
-    <tr>
-      <th> <img src="/Documentos/assets/team_pics/carolina.png" height=120px> </th>
-      <td>Carolina Medeiros</td>
-      <td>Desenvolvedora</td>
-      <td><a href="https://github.com/mcarolinamedeiros"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href="https://br.linkedin.com/in/mcarolinamedeiros"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr> 
-     <tr>
-      <th> <img src="/Documentos/assets/team_pics/daiane.png" height=120px> </th>
+    <tr>
+      <th> <img src="assets/team_pics/daiane.png" height=120px> </th>
       <td>Daiane Moura</td>
       <td>Desenvolvedora</td>
       <td><a href="https://github.com/mouradaiane"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>

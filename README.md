@@ -274,26 +274,37 @@ Sprints de **3 semanas**, com tasks quebradas para no máximo **8h** cada.
 
 ### Pré-requisitos
 - Docker e Docker Compose instalados
-- Java 17+ e Maven (para rodar o backend fora de container)
-- Node.js 18+ (para rodar o frontend fora de container)
+- Java 21 e Maven wrapper (para rodar o backend fora de container)
+- Node.js >= 22.18 (para rodar o frontend fora de container)
 
-### Executando com Docker Compose
+### Executando com Docker Compose (Stack Completa)
 ```bash
-git clone https://github.com/DataSphere-API/API_3_SEM.git
-cd fusex-integra
-docker compose up -d --build
+git clone --recurse-submodules https://github.com/DataSphere-API/API_3_SEM.git
+cd API_3_SEM
+cp .env.example .env
+docker compose up --build
 ```
-- Backend disponível em: `http://localhost:8080/`
-- Frontend disponível em: `http://localhost:5173/`
+- **Backend API**: `http://localhost:8080`
+- **Frontend Web**: `http://localhost:5173`
 - As migrações do banco (Flyway) são aplicadas automaticamente ao subir o backend.
+
+### Atualização e Trabalho com Submódulos
+- **Para trazer as versões mais recentes registradas:**
+  ```bash
+  git pull && git submodule update --init --recursive
+  ```
+- **Para atualizar os ponteiros após alterações nos repositórios filhos:**
+  1. Realize os commits e pushes dentro de `backend` e/ou `frontend`.
+  2. Na raiz do repositório, registre a nova referência dos submódulos:
+     ```bash
+     git add backend frontend
+     git commit -m "chore: atualiza ponteiros dos submodulos"
+     ```
 
 ### Rodando testes
 ```bash
 # Backend
-cd backend && mvn test
-
-# Frontend
-cd frontend && npm run test
+cd backend && ./mvnw test
 ```
 
 ---

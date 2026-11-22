@@ -143,28 +143,28 @@ O **FUSEX Integra** unifica e automatiza a gestão de guias e faturamentos por m
       <td> Como emissor de guia, quero gerar a Guia de Encaminhamento FUSEX no SIRE com os dados coletados no app, para evitar preenchimento manual duplicado. </td>
       <td align="center"> MÉDIA </td>
       <td align="center"> 3 </td>
-      <td align="center">  </td>        
+      <td align="center"> 3 </td>        
     </tr>
     <tr>
       <td align="center"> <b> US007 </b> </td>
       <td> Como auditor, quero visualizar o histórico completo de cada guia (solicitação, emissão, atendimento, fatura, aprovação), para garantir rastreabilidade do processo. </td>
       <td align="center"> MÉDIA </td>
       <td align="center"> 3 </td>
-      <td align="center">  </td>
+      <td align="center"> 8 </td>
     </tr>
     <tr>
       <td align="center"> <b> US008</b> </td>
       <td> Como emissor de guia, quero registrar a solicitação de exame gerando uma Pré Guia, para que o processo de encaminhamento já comece padronizado. </td>
       <td align="center"> BAIXA </td>
       <td align="center"> 3 </td>
-      <td align="center">  </td>
+      <td align="center"> 2 </td>
     </tr>
     <tr>
       <td align="center"> <b> US009 </b> </td>
       <td> Como beneficiário, quero acessar um painel com o status de cada guia (solicitada, emitida, realizada, faturada, aprovada, liquidada), para acompanhar o andamento sem precisar consultar múltiplas fontes. </td>
       <td align="center"> BAIXA </td>
       <td align="center"> 3 </td>
-      <td align="center">  </td>
+      <td align="center"> 5 </td>
     </tr>
   </table>
 </div>
@@ -268,44 +268,32 @@ Sprints de **3 semanas**, com tasks quebradas para no máximo **8h** cada.
 
 ---
 
-## ▶️ Como Executar, Usar e Testar
+## ▶️ Manual de Instalação e Execução <a id="instalacao"></a>
 
-- <a href="/Documentos/Manual%20de%20usu%C3%A1rio.md">Manual do usuário</a>
+**Pré-requisitos:** Git, Docker iniciado e Docker Compose v2, com as portas `5432`, `8080` e `5173` livres. Java, Node.js e PostgreSQL são fornecidos pelos containers.
 
-### Pré-requisitos
-- Docker e Docker Compose instalados
-- Java 21 e Maven wrapper (para rodar o backend fora de container)
-- Node.js >= 22.18 (para rodar o frontend fora de container)
+### Instalação local
 
-### Executando com Docker Compose (Stack Completa)
+Os submódulos registrados na raiz incluem a entrega da Sprint 3: backend da `main` e frontend da `dev`.
+
 ```bash
 git clone --recurse-submodules https://github.com/DataSphere-API/API_3_SEM.git
 cd API_3_SEM
 cp .env.example .env
-docker compose up --build
+docker compose up -d --build
 ```
-- **Backend API**: `http://localhost:8080`
-- **Frontend Web**: `http://localhost:5173`
-- As migrações do banco (Flyway) são aplicadas automaticamente ao subir o backend.
 
-### Atualização e Trabalho com Submódulos
-- **Para trazer as versões mais recentes registradas:**
-  ```bash
-  git pull && git submodule update --init --recursive
-  ```
-- **Para atualizar os ponteiros após alterações nos repositórios filhos:**
-  1. Realize os commits e pushes dentro de `backend` e/ou `frontend`.
-  2. Na raiz do repositório, registre a nova referência dos submódulos:
-     ```bash
-     git add backend frontend
-     git commit -m "chore: atualiza ponteiros dos submodulos"
-     ```
+O `.env` da raiz define `DB_NAME`, `DB_USERNAME` e `DB_PASSWORD`; revise os valores antes de iniciar. O Flyway aplica as migrações e os dados iniciais automaticamente.
 
-### Rodando testes
-```bash
-# Backend
-cd backend && ./mvnw test
-```
+- **Frontend:** http://localhost:5173
+- **API / Swagger:** http://localhost:8080/swagger-ui/index.html
+- **Login de teste (emissor):** CPF `18609139034`, senha `fusex123`.
+- **Verificar inicialização:** `docker compose logs --tail=100 backend`; aguarde `Started FusexApplication`.
+- **Parar preservando os dados:** `docker compose down`.
+
+Em uma instalação existente, preserve as alterações locais e o `.env` antes de atualizar. Se houver erro de migração em um banco antigo, confira os logs e preserve o volume do banco.
+
+Para os fluxos de uso, consulte o [Manual do usuário](Documentos/Manual%20de%20usu%C3%A1rio.md).
 
 ---
 

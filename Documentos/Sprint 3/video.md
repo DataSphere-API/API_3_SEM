@@ -9,4 +9,6 @@ Este vídeo apresentará a demonstração das funcionalidades desenvolvidas dura
 
 ### 🎥 Vídeo da Sprint 3
 
-Link do vídeo pendente de publicação.
+[▶️ Assistir ao vídeo da Sprint 3](../assets/video/Sprint%203/Atualizacao_da_terceira_sprint_do_Fusex-bb96c12779544119b022301f5972a909.mp4)
+
+Ou pelo Link do vídeo: https://www.loom.com/share/bb96c12779544119b022301f5972a909
